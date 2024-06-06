@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ultimate Question Form</title>
+</head>
+<body>
+    <form method="post" action="{% url 'your_view_name' %}">
+        {% csrf_token %}
+        <!-- Your form fields here -->
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question">
+        
+        <label for="choice1">Choice 1:</label>
+        <input type="text" id="choice1" name="choice1">
+        
+        <label for="choice2">Choice 2:</label> 
+        <input type="text" id="choice2" name="choice2">
+        
+        <label for="choice3">Choice 3:</label>
+        <input type="text" id="choice3" name="choice3">
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
