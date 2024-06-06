@@ -19,4 +19,4 @@ def your_view(request):
         choice3 = request.POST.get('choice3')
         # Insert logic to save question and choices
         pass
-    return render(request, 'ultimate_question_app/form.html', {})
+    return render(request, 'polls/form.html', {})
